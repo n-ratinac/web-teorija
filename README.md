@@ -299,3 +299,15 @@ Ovo je ono što bismo mogli da okarakterišemo kao sinhroni rad klijenta i serve
 Kasnije, kada su se pojavili drugi tipovi sadržaja, klijent bi mogao slati zahtev serveru, a server bi mogao odgovoriti sa `application/json` tipom sadržaja koji bi klijent smestio na odgovarajću lokaciju na stranici. Ovaj režim rada je poznat kao asinhroni i prva njegova implementacija se zvala AJAX (Asynchronous JavaScript and XML), po tome što su jedina dva tipa bili `json` i `xml`.
 
 ### TCP i UDP
+
+TCP (Transmission Control Protocol) postiže pouzdanost slanja podataka na nekoliko načina:
+
+- Potvrde o prijemu (Acknowledgments): Nakon što pošalje segment podataka, TCP očekuje potvrdu (ACK) od primaoca da je segment stigao. Ako ne primi potvrdu u određenom vremenskom intervalu, TCP ponovo šalje segment. Ovo osigurava da se podaci ne izgube i da stignu na odredište.
+
+- Redosled paketa (Sequence Numbers): TCP numeriše svaki segment podataka koji šalje. Primalac koristi brojeve sekvenca da bi rekonstruisao originalni redosled podataka. Ako primi segmente van redosleda, TCP ih ponovo uređuje pre isporuke aplikaciji.
+
+- Ponovno slanje (Retransmission): Ako se segment podataka izgubi ili stigne sa greškom, primalac šalje zahtev za ponovno slanje (duplicate ACK). Pošiljalac tada ponovo šalje segmente koji nisu stigli ispravno.
+
+- Provera grešaka (Checksum): TCP koristi kontrolni zbir (checksum) kako bi detektovao greške u primljenim podacima. Primalac proverava kontrolni zbir i, ako detektuje grešku, zahteva ponovno slanje podataka.
+
+- Kontrola toka (Flow Control): TCP koristi mehanizam kontrolisanja toka kako bi sprečio preplavljivanje primaoca prevelikim brojem podataka. Primalac šalje kontrolne poruke (window size) kako bi obavestio pošiljaoca koliko podataka može primiti u jednom trenutku.
