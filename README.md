@@ -12,27 +12,27 @@ Taj problem je rešen usvajanjem slojevite arhitekture računarskih mreža koji 
 
 Sa ovim pravilima se razvio OSI model koji ima 4 sloja:
 
-1. Fizički sloj - bavi se fizičkim aspektima prenosa podataka između dva uređaja poput električnih signala, kablovima, EM zracima, i sl.
-2. Sloj veze - bavi se kontrolom fizičkog toka podataka između uređaja na istoj lokalnoj mreži. Podaci se organizuju u okvire, vrši se proveravanje grešaka i upravlja pristupom medijumu.
-3. Mrežni sloj - omogućuje rutiranje podataka između različitih mreža. To uključuje adresiranje, rutiranje i preusmeravanje podataka kroz mrežu
-4. Transportni sloj - pruža pouzdanu i efikasnu komunikaciju između krajnjih tačaka (npr. klijenta i server ili dva različita računara u P2P mrežama). Brine se o segmentaciji podataka, prenosu i ponovnom sastavljanju paketa na destinaciji. Karakteristicni protokoli su TCP (Transmission Control Protocol) i UDP (User Datagram Protocol) koji omogućuju pouzdan i nepouzdan prenos paketa, respektivno.
-5. Sloj sesije - omogućuje kreiranje, upravljanje i uništavanje sesija između aplikacija na različitim uređajima
-6. Prezentacioni sloj - odgovoran je za enkripciju, kompresiju i formatiranje podataka da bi se osigurala kompatibilnost između aplikacija na različitim uređajima i platformama
-7. Aplikativni sloj - pruža korisničke usluge poput elektronske pošte, FTP (File Transfer Protocol), DNS(Domain Name System), HTTP/HTTPS
+1. **Fizički sloj** - bavi se fizičkim aspektima prenosa podataka između dva uređaja poput električnih signala, kablovima, EM zracima, i sl.
+2. **Sloj veze** - bavi se kontrolom fizičkog toka podataka između uređaja na istoj lokalnoj mreži. Podaci se organizuju u okvire, vrši se proveravanje grešaka i upravlja pristupom medijumu.
+3. **Mrežni sloj** - omogućuje rutiranje podataka između različitih mreža. To uključuje adresiranje, rutiranje i preusmeravanje podataka kroz mrežu
+4. **Transportni sloj** - pruža pouzdanu i efikasnu komunikaciju između krajnjih tačaka (npr. klijenta i server ili dva različita računara u P2P mrežama). Brine se o segmentaciji podataka, prenosu i ponovnom sastavljanju paketa na destinaciji. Karakteristicni protokoli su TCP (Transmission Control Protocol) i UDP (User Datagram Protocol) koji omogućuju pouzdan i nepouzdan prenos paketa, respektivno.
+5. **Sloj sesije** - omogućuje kreiranje, upravljanje i uništavanje sesija između aplikacija na različitim uređajima
+6. **Prezentacioni sloj** - odgovoran je za enkripciju, kompresiju i formatiranje podataka da bi se osigurala kompatibilnost između aplikacija na različitim uređajima i platformama
+7. **Aplikativni sloj** - pruža korisničke usluge poput elektronske pošte, FTP (File Transfer Protocol), DNS(Domain Name System), HTTP/HTTPS
 
 
 ## Web
 
 Web predstavlja servis koji je zivi na podskupu interneta i sastoji se od web stranica kojima se moze pristupiti koriscenjem web pretrazivaca.
 Postoji dosta servisa i tehnologija koji su integralni za rad web-a:
-1. DNS (Domain Name System) - Sistem koji povezuje domenska imena i IP adrese
-2. CDN (Content Delivery Network) - Sistem koji omogucava distribuiranje sadrzaja
-3. HTTP (HyperText Transfer Protocol) - Protokol koji omogucava komunikaciju između servera i klijenta
-4. HTTPS (HyperText Transfer Protocol Secure) - Protokol koji omogucava komunikaciju između servera i klijenta koja je enkriptovana
-5. SSL (Secure Socket Layer) - Protokol koji omogucava sigurnu komunikaciju između dva računara, pogotovu na internetu
-6. TCP (Transmission Control Protocol) - Protokol koji omogućava pouzdan prenos podataka. Kada jedan računar pošalje paket, ovaj protokol garantuje da će paket stići na destinaciju.
-7. UDP (User Datagram Protocol) - Protokol koji omogućava pouzdan prenos podataka. Kada jedan računar pošalje paket, ovaj protokolne garantuje pristizanje paketa što mu dozvoljava da šalje pakete većom brzinom.
-
+1. **DNS (Domain Name System)** - Sistem koji povezuje domenska imena i IP adrese
+2. **CDN (Content Delivery Network)** - Sistem koji omogucava distribuiranje sadrzaja
+3. **HTTP (HyperText Transfer Protocol)** - Protokol koji omogucava komunikaciju između servera i klijenta
+4. **HTTPS (HyperText Transfer Protocol Secure)** - Protokol koji omogucava komunikaciju između servera i klijenta koja je enkriptovana
+5. **SSL (Secure Socket Layer)** - Protokol koji omogucava sigurnu komunikaciju između dva računara, pogotovu na internetu
+6. **TCP (Transmission Control Protocol)** - Protokol koji omogućava **pouzdan** prenos podataka. Kada jedan računar pošalje paket, ovaj protokol garantuje da će paket stići na destinaciju.
+7. **UDP (User Datagram Protocol)** - Protokol koji omogućava **nepouzdan** prenos podataka. Kada jedan računar pošalje paket, ovaj protokolne garantuje pristizanje paketa što mu dozvoljava da šalje pakete većom brzinom.
+8. **IP (Internet Protocol** - 
 
 ### DNS (Domain Name System)
 
