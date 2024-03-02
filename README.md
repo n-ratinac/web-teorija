@@ -303,11 +303,24 @@ Kasnije, kada su se pojavili drugi tipovi sadržaja, klijent bi mogao slati zaht
 TCP (Transmission Control Protocol) postiže pouzdanost slanja podataka na nekoliko načina:
 
 - Potvrde o prijemu (Acknowledgments): Nakon što pošalje segment podataka, TCP očekuje potvrdu (ACK) od primaoca da je segment stigao. Ako ne primi potvrdu u određenom vremenskom intervalu, TCP ponovo šalje segment. Ovo osigurava da se podaci ne izgube i da stignu na odredište.
-
 - Redosled paketa (Sequence Numbers): TCP numeriše svaki segment podataka koji šalje. Primalac koristi brojeve sekvenca da bi rekonstruisao originalni redosled podataka. Ako primi segmente van redosleda, TCP ih ponovo uređuje pre isporuke aplikaciji.
-
 - Ponovno slanje (Retransmission): Ako se segment podataka izgubi ili stigne sa greškom, primalac šalje zahtev za ponovno slanje (duplicate ACK). Pošiljalac tada ponovo šalje segmente koji nisu stigli ispravno.
-
 - Provera grešaka (Checksum): TCP koristi kontrolni zbir (checksum) kako bi detektovao greške u primljenim podacima. Primalac proverava kontrolni zbir i, ako detektuje grešku, zahteva ponovno slanje podataka.
-
 - Kontrola toka (Flow Control): TCP koristi mehanizam kontrolisanja toka kako bi sprečio preplavljivanje primaoca prevelikim brojem podataka. Primalac šalje kontrolne poruke (window size) kako bi obavestio pošiljaoca koliko podataka može primiti u jednom trenutku.
+
+UDP (User Datagram Protocol) je jednostavan protokol za prenos podataka koji se koristi za slanje podataka preko mreže. Za razliku od TCP-a, UDP nije orijentisan ka vezi i ne obezbeđuje pouzdanost, redosled ili kontrolu toka. Umesto toga, UDP je jednostavan i efikasan, što ga čini pogodnim za aplikacije koje zahtevaju brz prenos podataka sa minimalnim overheadom.
+
+Evo kako radi UDP:
+
+- Paketizacija: Podaci koji se šalju preko UDP-a paketišu se u datagramima. Datagram je jedna jedinica podataka koja se šalje preko mreže. Datagram može sadržavati različite vrste podataka, uključujući audio, video, tekst ili bilo šta drugo.
+- Adresiranje: Svaki datagram sadrži informacije o izvornom i odredišnom IP adresi, kao i portovima između kojih se šalje podatak.
+- Slanje bez potvrde o prijemu: UDP ne čeka na potvrdu prijema (ACK) od primaoca kao TCP. Umesto toga, jednostavno šalje datagrame ka odredištu.
+- Nepouzdanost: UDP ne garantuje da će podaci stići na odredište, niti u pravilnom redosledu. Datagrami se šalju i primaocu bez ikakvog prethodnog uspostavljanja veze ili provere ispravnosti prenosa.
+- Jednostavnost i efikasnost: Budući da ne mora da održava vezu i ne vrši dodatne provere, UDP je jednostavniji i efikasniji od TCP-a. To ga čini pogodnim za aplikacije koje zahtevaju brz prenos podataka, kao što su igre, video prenosi uživo i aplikacije za striming.
+
+UDP se često koristi tamo gde je brzina prenosa podataka važnija od pouzdanosti ili redosleda, ili gde aplikacija ima sopstvene mehanizme za kontrolu grešaka ili redundanciju. Na primer, DNS (Domain Name System), VoIP (Voice over IP) i striming video servisi često koriste UDP zbog svojih brzih performansi i jednostavnosti.
+
+
+
+
+
