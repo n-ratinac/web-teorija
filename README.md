@@ -159,30 +159,30 @@ HTTP protokol koristi default-ni port 80, dok HTTPS koristi 443.
 
 ###### 1XX (Informativni odgovori)
 
-**100 Continue**: Server je primio zahtev i klijent može nastaviti sa slanjem ostatka zahteva.
+- **100 Continue**: Server je primio zahtev i klijent može nastaviti sa slanjem ostatka zahteva.
 ###### 2XX (Uspešni odgovori)
 
-**200 OK**: Zahtev je uspešno obradjen i server vraća tražene podatke.
-**201 Created**: Resurs je uspešno kreiran na serveru.
-**204 No Content**: Zahtev je uspešno obradjen, ali server ne vraća nikakav sadržaj kao odgovor.
+- **200 OK**: Zahtev je uspešno obradjen i server vraća tražene podatke.
+- **201 Created**: Resurs je uspešno kreiran na serveru.
+- **204 No Content**: Zahtev je uspešno obradjen, ali server ne vraća nikakav sadržaj kao odgovor.
 
 ###### 3XX (Preusmeravajući odgovori)
 
-**301 Moved Permanently**: Resurs je trajno premešten na drugu lokaciju.
-**302 Found**: Resurs je privremeno premešten na drugu lokaciju.
-**304 Not Modified**: Traženi resurs nije modifikovan od strane klijenta od poslednjeg zahteva.
+- **301 Moved Permanently**: Resurs je trajno premešten na drugu lokaciju.
+- **302 Found**: Resurs je privremeno premešten na drugu lokaciju.
+- **304 Not Modified**: Traženi resurs nije modifikovan od strane klijenta od poslednjeg zahteva.
 
 ###### 4XX (Klijentske greške)
 
-**400 Bad Request**: Server nije uspeo da obradi zahtev zbog neispravnog sintaksnog formata ili drugih grešaka u zahtevu koji je poslao klijent.
-**401 Unauthorized**: Klijent nije autentifikovan i zahteva autentifikaciju kako bi pristupio resursu.
-**404 Not Found**: Traženi resurs nije pronađen na serveru.
+- **400 Bad Request**: Server nije uspeo da obradi zahtev zbog neispravnog sintaksnog formata ili drugih grešaka u zahtevu koji je poslao klijent.
+- **401 Unauthorized**: Klijent nije autentifikovan i zahteva autentifikaciju kako bi pristupio resursu.
+- **404 Not Found**: Traženi resurs nije pronađen na serveru.
 
 ###### 5XX (Serverske greške)
 
-**500 Internal Server Error**: Server je naišao na neizvršljivu situaciju koja je uzrokovala grešku u obradi zahteva.
-**502 Bad Gateway**: Server koji je delovao kao gateway ili proxy je dobio neispravan odgovor od gornjeg servera.
-**503 Service Unavailable**: Server nije trenutno dostupan zbog preopterećenja ili održavanja.
+- **500 Internal Server Error**: Server je naišao na neizvršljivu situaciju koja je uzrokovala grešku u obradi zahteva.
+- **502 Bad Gateway**: Server koji je delovao kao gateway ili proxy je dobio neispravan odgovor od gornjeg servera.
+- **503 Service Unavailable**: Server nije trenutno dostupan zbog preopterećenja ili održavanja.
 
 Sledi tabela koja ilustruje koja metoda može da dobije koji odgovor.
 
