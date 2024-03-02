@@ -32,7 +32,7 @@ Postoji dosta servisa i tehnologija koji su integralni za rad web-a:
 5. **SSL (Secure Socket Layer)** - Protokol koji omogucava sigurnu komunikaciju između dva računara, pogotovu na internetu
 6. **TCP (Transmission Control Protocol)** - Protokol koji omogućava **pouzdan** prenos podataka. Kada jedan računar pošalje paket, ovaj protokol garantuje da će paket stići na destinaciju.
 7. **UDP (User Datagram Protocol)** - Protokol koji omogućava **nepouzdan** prenos podataka. Kada jedan računar pošalje paket, ovaj protokolne garantuje pristizanje paketa što mu dozvoljava da šalje pakete većom brzinom.
-8. **IP (Internet Protocol** - 
+8. **IP (Internet Protocol)** - Osnovni protokol koji se koristi za rutiranje podataka na Internetu. On definiše način na koji se podaci paketiraju, adresiraju, prosleđuju i rutiraju između različitih uređaja na Internetu
 
 ### DNS (Domain Name System)
 
@@ -206,9 +206,10 @@ Sledi tabela koja ilustruje koja metoda može da dobije koji odgovor.
 - `path` označava putanju do resursa 
 - `query` označava eventualne parametre u URL-u
 
-**URL (Uniform Resource Locator)** predstavlja sve ove elemente.
-**URI (Uniform Resource Identifier)** predstavlja sve ove elemente bez `scheme`.
-**URN (Uniform Resource Name)** predstavlja `path` i `query`.
+
+- **URL (Uniform Resource Locator)** predstavlja sve ove elemente.
+- **URI (Uniform Resource Identifier)** predstavlja sve ove elemente bez `scheme`.
+- **URN (Uniform Resource Name)** predstavlja `path` i `query`.
 
 
 #### HTTP tipovi sadržaja (content types)
@@ -296,3 +297,5 @@ Lista svih tipova može se pronaći na lokaciji https://mimetype.io/all-types.
 U ranim fazama web-a, tip svakog serverskog odgovora je bio `text/html`, što znači da bi se stalno ili osvežavala postojeća stranica ili bi se klijent upućivao na neku drugu stranicu.
 Ovo je ono što bismo mogli da okarakterišemo kao sinhroni rad klijenta i servera.
 Kasnije, kada su se pojavili drugi tipovi sadržaja, klijent bi mogao slati zahtev serveru, a server bi mogao odgovoriti sa `application/json` tipom sadržaja koji bi klijent smestio na odgovarajću lokaciju na stranici. Ovaj režim rada je poznat kao asinhroni i prva njegova implementacija se zvala AJAX (Asynchronous JavaScript and XML), po tome što su jedina dva tipa bili `json` i `xml`.
+
+### TCP i UDP
