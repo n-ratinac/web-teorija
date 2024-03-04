@@ -31,7 +31,7 @@ Postoji dosta servisa i tehnologija koji su integralni za rad web-a:
 4. **HTTPS (HyperText Transfer Protocol Secure)** - Protokol koji omogucava komunikaciju između servera i klijenta koja je enkriptovana
 5. **SSL (Secure Socket Layer)** - Protokol koji omogucava sigurnu komunikaciju između dva računara, pogotovu na internetu
 6. **TCP (Transmission Control Protocol)** - Protokol koji omogućava **pouzdan** prenos podataka. Kada jedan računar pošalje paket, ovaj protokol garantuje da će paket stići na destinaciju.
-7. **UDP (User Datagram Protocol)** - Protokol koji omogućava **nepouzdan** prenos podataka. Kada jedan računar pošalje paket, ovaj protokolne garantuje pristizanje paketa što mu dozvoljava da šalje pakete većom brzinom.
+7. **UDP (User Datagram Protocol)** - Protokol koji omogućava **nepouzdan** prenos podataka. Kada jedan računar pošalje paket, ovaj protokol **ne garantuje** pristizanje paketa što mu dozvoljava da šalje pakete većom brzinom.
 8. **IP (Internet Protocol)** - Osnovni protokol koji se koristi za rutiranje podataka na Internetu. On definiše način na koji se podaci paketiraju, adresiraju, prosleđuju i rutiraju između različitih uređaja na Internetu
 
 ### DNS (Domain Name System)
