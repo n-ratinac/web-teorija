@@ -10,7 +10,7 @@ Taj problem je rešen usvajanjem slojevite arhitekture računarskih mreža koji 
 1. Svrstavane u slojeve
 2. Tehnologije smeju koristiti samo druge tehnologije iz sloja koji je neposredno ispod
 
-Sa ovim pravilima se razvio OSI model koji ima 4 sloja:
+Sa ovim pravilima se razvio OSI model koji ima 7 slojeva:
 
 1. **Fizički sloj** - bavi se fizičkim aspektima prenosa podataka između dva uređaja poput električnih signala, kablovima, EM zracima, i sl.
 2. **Sloj veze** - bavi se kontrolom fizičkog toka podataka između uređaja na istoj lokalnoj mreži. Podaci se organizuju u okvire, vrši se proveravanje grešaka i upravlja pristupom medijumu.
