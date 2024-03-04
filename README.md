@@ -101,7 +101,7 @@ Zakljucujemo da klijent:
 3. `User-Agent` heder: Salje sa `Mozilla/5.0` pretraživača sa `Windows 10` OS-a sa `x64` arhitekturom itd.
 4. `Accept` heder: Prihvata odgovore tipa `text/html`, `application/xhtml+xml`, `application/xml` itd.
 
-Evo još jednog primera, ovog puta PUT zahteva:
+Evo još jednog primera, ovog puta POST zahteva:
 ```http
 POST /login HTTP/1.1
 Host: www.example.com
